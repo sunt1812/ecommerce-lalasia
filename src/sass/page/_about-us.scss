@@ -1,0 +1,87 @@
+.about-us {
+    margin-top: 8rem;
+    .video {
+        &__container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; 
+        }
+        &__iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .mission {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: flex-start;
+        gap: 10rem;
+        @include mobile {
+            grid-template-columns:100%;
+            gap:0;
+        }
+        &__left {
+            &-title {
+                margin: 1.4rem 0 3rem;
+            }
+            .out-product__box {
+               @include mobile {
+                   display: flex;
+               }
+            }
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            margin-bottom: 1.5rem;
+            &__left {
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                background-color: $gray;
+                @include flex(center,center); 
+            }
+            &__right {
+                flex: 1;
+            }
+            &__title {
+                font-size: 2.6rem;
+            }
+            &__desc {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+    }
+    .team {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 3rem;
+            @include mobile {
+                grid-template-columns: 100%;
+                margin-top: 2rem;
+            }
+        }
+        &-item {
+            &__img {
+                height: 30rem;
+                width: 100%;
+                object-fit: cover;
+            }
+            &__name {
+                font-size: 2.6rem;
+                margin: 2.6rem 0 0.8rem;
+            }
+        }
+    }
+}

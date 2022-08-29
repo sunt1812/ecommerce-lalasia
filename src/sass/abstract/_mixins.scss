@@ -1,0 +1,36 @@
+@mixin flex($align-item, $justify-content) {
+    display: flex;
+    align-items: $align-item;
+    justify-content: $justify-content;
+}
+@mixin flexCenter($align-item) {
+    display: flex;
+    align-items: $align-item;
+}
+@mixin  absYCenter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin  absxCenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin  absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
+        @content;
+    }
+}

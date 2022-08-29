@@ -1,0 +1,24 @@
+.pagination {
+    @include flex(center,center);
+    padding-bottom: 8rem;
+    &__btn {
+        padding: 1rem 1.5rem;
+        border: 1.5px solid $gray;
+        background-color: transparent;
+        color: $black;
+        &.active {
+            background-color: $primary-color;
+            color: $white;
+        }
+    }
+    &__load {
+        background-color: transparent;
+        margin: 0rem 1rem;
+    }
+    &__icon {
+        background-color: $white;
+    }
+    button {
+        cursor: pointer;
+    }
+}

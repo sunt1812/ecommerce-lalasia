@@ -1,0 +1,56 @@
+.hero {
+    margin-top: $header-height;
+    &__info {
+        max-width: 79.6rem;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        margin-bottom: -3rem;
+        z-index: 1;
+        @include tablet {
+            max-width: 60rem;
+        }
+        @include mobile {
+            max-width: unset;
+            margin-bottom: 3rem;
+        }
+        &-bg1 {
+            position: absolute;
+            top: 70%;
+            transform: translateY(-50%);
+            left: -15rem;
+            width: 20rem;
+            @include mobile {
+                display: none;
+            }
+        }
+        &-bg2 {
+            position: absolute;
+            width: 5.1rem;
+            right: 6rem;
+            top: 7rem;
+            @include tablet {
+                right: 5rem;
+                top: 5rem;
+            }
+            @include mobile {
+               display: none;
+            }
+        }
+        &-title {
+            font-size: 6.4rem;
+            margin-bottom: 3rem;
+            line-height: 1.2;
+            position: relative;
+            @include tablet {
+                font-size: 4.5rem;
+            }
+            @include mobile {
+                font-size: 3.5rem;
+            }
+        }
+        &-desc {
+            margin-bottom: 5rem;
+        }
+    }
+}

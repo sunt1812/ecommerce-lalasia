@@ -1,0 +1,45 @@
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    color: $white;
+    padding: 1.6rem 4.7rem;
+    cursor: pointer;
+    @include tablet {
+        padding: 1.2rem 3.7rem;
+    }
+    & + .btn {
+        margin-left: 2rem;
+    }
+    &-primary {
+        background-color: $primary-color;
+        color: $white;
+    }
+    &-outside {
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        background-color: $white;
+    }
+    span {
+        @include flexCenter(center);
+        gap: 1.5rem;
+    }
+    @include mobile {
+        & + .btn {
+            margin-left: unset;
+        }
+        span {
+            text-align: center;
+            @include flexCenter(center);
+        }
+        &-block {
+            display: block;
+            width: 100%;
+            & + .btn-block {
+                margin-top: 2rem;
+            }
+            span {
+                display: unset;
+            }
+        }
+    }
+}

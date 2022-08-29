@@ -1,0 +1,46 @@
+.product-cart {
+    &__zoom {
+        overflow: hidden;
+    }
+    &__img {
+        height: 36rem;
+        width: 100%;
+        object-fit: cover;
+        transition: all .3s ease-out;
+        @include tablet {
+            height: 30rem;
+        }
+        @include mobile {
+            height: 25rem;
+        }
+        &:hover {
+            transform: scale(1.2);
+            @include mobile {
+                transform: unset;
+            }
+        }
+    }
+    &__subtitle {
+        margin: 2.6rem 0rem 1.4rem;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 2.6rem;
+        line-height: 130%;
+        margin-bottom: 0.6rem;
+        
+    }
+    &__price {
+        font-size: 2.4rem;
+        color: $black;
+        margin-top: 1.8rem;
+        font-weight: 700;
+    }
+    &__title,
+    &__desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}

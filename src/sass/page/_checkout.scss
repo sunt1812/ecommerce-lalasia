@@ -1,0 +1,35 @@
+.checkout {
+    margin-top: 10rem;
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        margin-top: 5rem;
+        @include mobile {
+            grid-template-columns: 100%;
+        }
+    }
+    .form {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    &__bill {
+        &-content {
+            background-color: $primary-color;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        &-subtotal,
+        &-shipping {
+            color: $white;
+            font-size: 1.8rem;
+        }
+        &-shipping {
+            margin: 1rem 0;
+        }
+        &-total {
+            font-size: 2rem;
+            color: $white;
+        }
+    }
+}

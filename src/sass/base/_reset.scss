@@ -1,0 +1,60 @@
+font-face {
+    font-family: 'Eudoxus Sans';
+    src: url('../../assets/fontweb/EudoxusSans-ExtraBold.woff2') format('woff2'),
+        url('../../assets/fontweb/EudoxusSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+    @include tablet {
+        font-size: 52%;
+    }
+    @include mobile {
+        font-size: 48.611%;
+    }
+}
+
+body {
+    font-family: "Eudoxus Sans", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.7;
+    color: $main-txt;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+h1 ,h2 ,h3 ,h4 ,h5,h6 {
+    font-weight: 700;
+    color: $black;
+    line-height: 1.2;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}

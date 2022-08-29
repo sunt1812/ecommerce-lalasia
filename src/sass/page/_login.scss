@@ -1,0 +1,26 @@
+.login {
+    margin-top: 10rem;
+    &__container {
+        display: grid;
+        grid-template-columns: .4fr;
+        justify-content: center;
+        margin-top: 3rem;
+        @include mobile {
+            grid-template-columns: 100%;
+        }
+    }
+    &__account {
+        margin-top: 3rem;
+        text-align: center;
+        color: $black;
+    }
+    .form {
+        background-color: #e8f0fe;
+        padding: 2rem;
+        border-radius: 5px;
+    }
+    .btn {
+        margin: auto;
+        display: block;
+    }
+}

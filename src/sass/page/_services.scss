@@ -1,0 +1,31 @@
+.services {
+    margin-top: 10rem;
+}
+.service {
+    &__image {
+        margin: 5rem 0;
+    }
+    &__content {
+        padding: 5rem 0;
+        border-top: 1px solid $light-gray;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+        @include mobile {
+            grid-template-columns: 100%;
+            border-top: 1px solid transparent;
+        }
+    }
+    &__item {
+        &-number {
+            font-size: 6.4rem;
+            font-weight: 700;
+            color: $primary-color;
+            margin-bottom: 2.6rem;
+        }
+        &-title {
+            font-size: 2.4rem;
+            margin-bottom: 0.6rem;
+        }
+    }
+}

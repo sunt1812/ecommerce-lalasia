@@ -1,0 +1,28 @@
+.subheading {
+    color: $secondary-color;
+    text-transform: capitalize;
+}
+.heading {
+    font-size: 4.4rem;
+    margin: 1.4rem 0rem 3rem;
+}
+
+.form {
+    &__group {
+        input {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+@each $color, $val in $colors {
+    .color-#{$color} {
+        color: $val;
+    }
+
+    .bg-#{$color} {
+        background-color: $val;
+    }
+}

@@ -1,0 +1,37 @@
+.testimonial {
+    background-color: $white;
+    box-shadow:0px 4px 30px rgba(175, 173, 181, 0.2);
+    padding: 2.4rem;
+    margin: 3rem 0;
+    @include mobile {
+        margin: 3%;
+        box-shadow:0px 4px 10px rgba(175, 173, 181, 0.2);;
+    }
+    &__desc {
+        margin: 2.6rem 0;
+    }
+    &__cta {
+        @include flex(center,space-between);
+    }
+    &__box {
+        @include flex(center,"");
+        gap: 1.4rem;
+    }
+    &__avatar {
+        width: 5.2rem;
+    }
+    &__name {
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: $black;
+    }
+    &__body {
+        @include flex(center,"");
+        gap: 1rem;
+    }
+    &__number {
+        font-weight: 700;
+        color: $black;
+    }
+}
